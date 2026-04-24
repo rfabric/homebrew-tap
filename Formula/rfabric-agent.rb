@@ -1,28 +1,28 @@
 class RfabricAgent < Formula
   desc "rFabric robot agent — bridges a robot to the rFabric platform"
   homepage "https://rfabric.io"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.2/rfabric-agent_0.1.2_darwin_arm64.tar.gz"
-      sha256 "a5f7ff43f4a6ef0c851220ceebb44c8af379f6da9156d6d84d1977acdf14337a"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.3/rfabric-agent_0.1.3_darwin_arm64.tar.gz"
+      sha256 "fbc5d4ba08959a84f6a9b43a696f44582c817d2e1108d07bb65040e24763b527"
     end
     on_intel do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.2/rfabric-agent_0.1.2_darwin_amd64.tar.gz"
-      sha256 "326afcbf685c5c0fd2656763bfe5e9e9703c4605287dd3bf993adb8f52ad334b"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.3/rfabric-agent_0.1.3_darwin_amd64.tar.gz"
+      sha256 "b6f6c7ccfb48570bbdac308287a350100bfb0e2ae6cf7bd84560bf0b64652834"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.2/rfabric-agent_0.1.2_linux_arm64.tar.gz"
-      sha256 "2b361432d07d907a121d914f4dad57026d5b1ec2cbf5ffd28ce2c6dd61d8f069"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.3/rfabric-agent_0.1.3_linux_arm64.tar.gz"
+      sha256 "09fe6fe039f3141e1335f002c4265deccb00a533be533b9dac52718a0b19710e"
     end
     on_intel do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.2/rfabric-agent_0.1.2_linux_amd64.tar.gz"
-      sha256 "d843d6705d2b3a3198aed48bd97310fcf318d1e07534a043908b7480cf361cc7"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.3/rfabric-agent_0.1.3_linux_amd64.tar.gz"
+      sha256 "c22750eead0ae362370e4570a381f922b864afed3c562e9f133e3f15660581d6"
     end
   end
 
