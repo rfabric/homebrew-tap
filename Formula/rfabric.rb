@@ -5,21 +5,21 @@
 class Rfabric < Formula
   desc "CLI for the rFabric robotics lifecycle platform"
   homepage "https://rfabric.io"
-  version "0.0.5"
+  version "0.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rfabric/cli/releases/download/v0.0.5/rfabric_0.0.5_darwin_amd64.tar.gz"
-      sha256 "50cc79ef5aa446afcea366e8964a2cbf7fbe2cf950a9c47b7be9b773baf932ca"
+      url "https://github.com/rfabric/cli/releases/download/v0.0.6/rfabric_0.0.6_darwin_amd64.tar.gz"
+      sha256 "a21f42efd23a7bacad6e898d5789262c93a7e832c5aa791e73b1707d603ba1ed"
 
       define_method(:install) do
         bin.install "rfabric"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rfabric/cli/releases/download/v0.0.5/rfabric_0.0.5_darwin_arm64.tar.gz"
-      sha256 "be8cf83fa9992f5d4eb013c2677ee245cd0add273c1df819d8ae2fad3b669a6a"
+      url "https://github.com/rfabric/cli/releases/download/v0.0.6/rfabric_0.0.6_darwin_arm64.tar.gz"
+      sha256 "f532ea221b2a690340aa477074b3d8c22fc1dfcbeccfa7280dcba7ad5a616272"
 
       define_method(:install) do
         bin.install "rfabric"
@@ -29,15 +29,15 @@ class Rfabric < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfabric/cli/releases/download/v0.0.5/rfabric_0.0.5_linux_amd64.tar.gz"
-      sha256 "798145f920b2c6ab341aac2785b23a95f44fcb519fe1a58878f83cc7bbed225b"
+      url "https://github.com/rfabric/cli/releases/download/v0.0.6/rfabric_0.0.6_linux_amd64.tar.gz"
+      sha256 "e090ee87dfdaca60c52700d09063706af3e6e6d4267fc52f57e6ae3523b0eaed"
       define_method(:install) do
         bin.install "rfabric"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfabric/cli/releases/download/v0.0.5/rfabric_0.0.5_linux_arm64.tar.gz"
-      sha256 "ca568b17aea6b516a385dadb0cebccf700a4c29bb5933b9ff33d69a334e3c8e5"
+      url "https://github.com/rfabric/cli/releases/download/v0.0.6/rfabric_0.0.6_linux_arm64.tar.gz"
+      sha256 "40b5ffd0f2b4bb3b1a22bd247ce91f5fd077881d5edb504febcb6e0b327bb9a3"
       define_method(:install) do
         bin.install "rfabric"
       end
