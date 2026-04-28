@@ -1,33 +1,28 @@
 class RfabricAgent < Formula
   desc "rFabric robot agent — bridges a robot to the rFabric platform"
   homepage "https://rfabric.io"
-  version "0.1.15"
+  version "0.1.16"
   license "Apache-2.0"
-
-  # Runtime dependency for the LiveKit + V4L2 → H264 capture pipeline
-  # baked into every release binary. Homebrew resolves the right
-  # bottle for the user's macOS arch.
-  depends_on "gstreamer"
 
   on_macos do
     on_arm do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.15/rfabric-agent_0.1.15_darwin_arm64.tar.gz"
-      sha256 "6b5d30261b6e36e81b38fe89d9e9b904d526042bf3dd0727b5e174d72a8ba15a"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.16/rfabric-agent_0.1.16_darwin_arm64.tar.gz"
+      sha256 "b28840238a7a58d61422c89ebd4d774a60cd2a3a477be5047729d1b50169d063"
     end
     on_intel do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.15/rfabric-agent_0.1.15_darwin_amd64.tar.gz"
-      sha256 "dd286d5e9f88f7ccc98d5fe6435e269bdb546c7d8dcd0a26ffe36b781849421e"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.16/rfabric-agent_0.1.16_darwin_amd64.tar.gz"
+      sha256 "088202203ad45111ba31bc9e37191c32c4add8bb121aebc83a3c9f3c61a6a029"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.15/rfabric-agent_0.1.15_linux_arm64.tar.gz"
-      sha256 "dd0f78500f22438e6d9796fc6a3eb9fa46e3e84ba41e75b58dc0fb9461d4e7a6"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.16/rfabric-agent_0.1.16_linux_arm64.tar.gz"
+      sha256 "6f01a25173cbbce4bf56167abb6ce51d295d79b1e229477a41dd80130973c13a"
     end
     on_intel do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.15/rfabric-agent_0.1.15_linux_amd64.tar.gz"
-      sha256 "729a1faf1222f1c17b27b260a8a9bd16e424056b1ab3808f06253c213eb2b415"
+      url "https://github.com/rfabric/agent/releases/download/v0.1.16/rfabric-agent_0.1.16_linux_amd64.tar.gz"
+      sha256 "aff151293f7cad90235890110f08844787bdd95f8a20f494701d4b953979d2c2"
     end
   end
 
