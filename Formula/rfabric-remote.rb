@@ -1,30 +1,30 @@
 class RfabricRemote < Formula
   desc "rFabric remote — robot agent with interactive media video + WebRTC teleoperation"
   homepage "https://rfabric.io"
-  version "0.1.23"
+  version "0.2.0"
   license "Apache-2.0"
 
   depends_on "gstreamer"
 
   on_macos do
     on_arm do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.23/rfabric-remote_0.1.23_darwin_arm64.tar.gz"
-      sha256 "7073c37fa1d09837826331ec810511f9a7c08776e406b8bb3c20bffc15e45c35"
+      url "https://github.com/rfabric/agent/releases/download/v0.2.0/rfabric-remote_0.2.0_darwin_arm64.tar.gz"
+      sha256 "90af9dcff951eb0b7c803ce2907b893c2a6e8a7dc54040dcd1197b425c623d41"
     end
     on_intel do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.23/rfabric-remote_0.1.23_darwin_amd64.tar.gz"
-      sha256 "4a1559f986bf48991aed794244c80e4339ac5480542cb0f76a518bc2b343520f"
+      url "https://github.com/rfabric/agent/releases/download/v0.2.0/rfabric-remote_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a9d3dd5f9ff975337502a514162434ec9f4e98cb21e21ee0edb878013b8b13dc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.23/rfabric-remote_0.1.23_linux_arm64.tar.gz"
-      sha256 "daba1d8eb7b5bb1295621984a5b078d8c98c9d4b9b0c45be3240224e270eee20"
+      url "https://github.com/rfabric/agent/releases/download/v0.2.0/rfabric-remote_0.2.0_linux_arm64.tar.gz"
+      sha256 "ed7f04900f75eb6ce3c5ab1add412dace84417cb83960d61469206e1842ad903"
     end
     on_intel do
-      url "https://github.com/rfabric/agent/releases/download/v0.1.23/rfabric-remote_0.1.23_linux_amd64.tar.gz"
-      sha256 "6a8d4fd5b69110def1dd7783ffb7f1973da984fca7985ea90ab3b419f047c8c2"
+      url "https://github.com/rfabric/agent/releases/download/v0.2.0/rfabric-remote_0.2.0_linux_amd64.tar.gz"
+      sha256 "986c5e8d309266ddb0e3e17c987bcc360a591a156944b4aa3911081f830100bc"
     end
   end
 
