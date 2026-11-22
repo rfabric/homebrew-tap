@@ -5,13 +5,13 @@
 class Rfabric < Formula
   desc "CLI for the rFabric robotics lifecycle platform"
   homepage "https://rfabric.io"
-  version "0.1.11"
+  version "0.1.12"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rfabric/cli/releases/download/v0.1.11/rfabric_0.1.11_darwin_amd64.tar.gz"
-      sha256 "afc3af0fa4edd6c018917892f0c1a6acd4f237a3e9bbd7018330308e1193428b"
+      url "https://github.com/rfabric/cli/releases/download/v0.1.12/rfabric_0.1.12_darwin_amd64.tar.gz"
+      sha256 "aabea4b50fe1cb3d6bf53b54e242bae9cfa086d7a6e1ef56df7c089ac5520c7f"
 
       define_method(:install) do
         bin.install "rfabric"
@@ -19,8 +19,8 @@ class Rfabric < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rfabric/cli/releases/download/v0.1.11/rfabric_0.1.11_darwin_arm64.tar.gz"
-      sha256 "321f64538eef1076d1157f31fcfbfbb71941079f377f4d4ce90c525fc448e137"
+      url "https://github.com/rfabric/cli/releases/download/v0.1.12/rfabric_0.1.12_darwin_arm64.tar.gz"
+      sha256 "3f8b3223a77b6e3dcca6f5f7681ef0193f99dcd830b86d2e4c9f4533e23b41bc"
 
       define_method(:install) do
         bin.install "rfabric"
@@ -31,16 +31,16 @@ class Rfabric < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfabric/cli/releases/download/v0.1.11/rfabric_0.1.11_linux_amd64.tar.gz"
-      sha256 "a8c26c9c153e4526381a878f8a53d8073cc6b519509b50296f25a8f43a4571a3"
+      url "https://github.com/rfabric/cli/releases/download/v0.1.12/rfabric_0.1.12_linux_amd64.tar.gz"
+      sha256 "3a93ce48a3b2865304e37b10f80e656bc3ade1bc7a8fc038b31d5058ffe0194f"
       define_method(:install) do
         bin.install "rfabric"
         man1.install Dir["man/*.1"]
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfabric/cli/releases/download/v0.1.11/rfabric_0.1.11_linux_arm64.tar.gz"
-      sha256 "2d7ab288a0b3513224a38372b3d5427108ccda6a669d03a917a00fbccd6e36ba"
+      url "https://github.com/rfabric/cli/releases/download/v0.1.12/rfabric_0.1.12_linux_arm64.tar.gz"
+      sha256 "4336b850d293b887dc8f75a04339ae7a2bedebce12a880a7b22d9d29832e1174"
       define_method(:install) do
         bin.install "rfabric"
         man1.install Dir["man/*.1"]
